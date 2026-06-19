@@ -156,7 +156,7 @@ export const WHY_US = [
 
 export const CONTACTS = [
   { role: 'Manager', number: '9080654027' },
-  { role: 'Admin', number: '7904991980' },
+  { role: 'Admin', number: '7904691980' },
 ];
 
 export const TESTIMONIALS = [

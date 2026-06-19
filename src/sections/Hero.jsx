@@ -28,8 +28,10 @@ export function Hero({ onContactClick, onServicesClick }) {
           Est. Workforce Ledger — Madurai, TN
         </div>
         <h1 className="hero-title" aria-label="Athena Solutions — HR, Payroll and Statutory Compliance">
-          <span className="hero-brand-stylized">ᗩ𝔱𝔥єղα</span>{' '}
-          <em className="hero-brand-stylized">𝔖ø𝔩ʊեιΘղṩ</em>
+          <span className="hero-brand-line">
+            <span className="hero-brand-stylized">Athena</span>
+            <em className="hero-brand-stylized">Solutions</em>
+          </span>
           <span className="line2">HR · Payroll · Statutory Compliance</span>
         </h1>
         <p className="hero-sub">Your one-stop service hub for complete workforce management.</p>
