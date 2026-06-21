@@ -8,12 +8,17 @@ export function StatCard({ stat, index }) {
   const Icon = stat.icon;
 
   useEffect(() => {
+    if (!('IntersectionObserver' in window)) {
+      setInView(true);
+      return undefined;
+    }
+
     const obs = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setInView(true);
         obs.disconnect();
       }
-    }, { threshold: 0.5 });
+    }, { threshold: 0.35 });
 
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
@@ -23,12 +28,12 @@ export function StatCard({ stat, index }) {
     <div
       ref={ref}
       className="stat-card reveal"
-      style={{ transitionDelay: `${index * 0.1}s` }}
+      style={{ '--stat-delay': `${index * 90}ms` }}
     >
       <div className="stat-icon-wrap">
-        <Icon size={22} />
+        <Icon size={21} strokeWidth={1.7} aria-hidden="true" />
       </div>
-      <div className="stat-value">{count}</div>
+      <div className="stat-value" aria-label={stat.value}>{count}</div>
       <div className="stat-label">{stat.label}</div>
     </div>
   );

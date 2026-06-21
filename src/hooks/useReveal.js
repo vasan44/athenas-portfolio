@@ -2,15 +2,14 @@ import { useEffect } from 'react';
 
 export function useReveal() {
   useEffect(() => {
-    const els = document.querySelectorAll(
-      '.athena .reveal, .athena .reveal-rule, .athena .reveal-left, .athena .reveal-right, .athena .reveal-scale'
-    );
+    const selector = '.athena .reveal, .athena .reveal-rule, .athena .reveal-left, .athena .reveal-right, .athena .reveal-scale';
 
     if (!('IntersectionObserver' in window)) {
-      els.forEach((el) => el.classList.add('visible'));
+      document.querySelectorAll(selector).forEach((el) => el.classList.add('visible'));
       return undefined;
     }
 
+    const observed = new WeakSet();
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -23,7 +22,22 @@ export function useReveal() {
       { threshold: 0.12, rootMargin: '0px 0px -50px 0px' }
     );
 
-    els.forEach((el) => obs.observe(el));
-    return () => obs.disconnect();
-  });
+    const observeNew = () => {
+      document.querySelectorAll(selector).forEach((el) => {
+        if (observed.has(el) || el.classList.contains('visible')) return;
+        observed.add(el);
+        obs.observe(el);
+      });
+    };
+
+    observeNew();
+
+    const mutation = new MutationObserver(observeNew);
+    mutation.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      mutation.disconnect();
+      obs.disconnect();
+    };
+  }, []);
 }

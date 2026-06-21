@@ -1,4 +1,4 @@
-import { ArrowUpRight, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { AthenaLogo } from '../components/AthenaLogo';
 import { NAV_LINKS } from '../data/siteData';
 
@@ -22,8 +22,8 @@ export function Header({ menuOpen, scrolled, onCloseMenu, onNavClick, onOpenMenu
             ))}
           </div>
           <div className="nav-cta-wrap">
-            <button className="btn btn-primary" onClick={onPrimaryClick}>
-              Get Started <ArrowUpRight size={14} />
+            <button className="nav-primary" onClick={onPrimaryClick}>
+              Let's Talk
             </button>
             <button className="nav-burger" onClick={onOpenMenu} aria-label="Open menu">
               <Menu size={24} />
@@ -48,6 +48,15 @@ export function Header({ menuOpen, scrolled, onCloseMenu, onNavClick, onOpenMenu
               {link.label}
             </a>
           ))}
+          <button
+            className="mobile-menu-cta"
+            onClick={(event) => {
+              onCloseMenu();
+              onPrimaryClick(event);
+            }}
+          >
+            Start a Conversation
+          </button>
         </div>
       )}
     </>

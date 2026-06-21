@@ -2,6 +2,7 @@ import { Building2, Clock, FileText, Users } from 'lucide-react';
 
 export const NAV_LINKS = [
   { id: 'home', label: 'Home' },
+  { id: 'clients', label: 'Clients' },
   { id: 'about', label: 'About' },
   { id: 'services', label: 'Services' },
   { id: 'forms', label: 'Compliance' },
@@ -15,6 +16,50 @@ export const STATS = [
   { icon: Building2, value: '50+', label: 'Client Companies' },
   { icon: FileText, value: '12', label: 'Statutory Registers' },
   { icon: Clock, value: '100%', label: 'Compliance Rate' },
+];
+
+export const CLIENT_LOGOS = [
+  { name: 'Manufacturing', mark: 'MF' },
+  { name: 'Construction', mark: 'CN' },
+  { name: 'Engineering', mark: 'EN' },
+  { name: 'Solar Energy', mark: 'SE' },
+  { name: 'Textiles', mark: 'TX' },
+  { name: 'Retail', mark: 'RT' },
+  { name: 'Logistics', mark: 'LG' },
+  { name: 'Services', mark: 'SV' },
+];
+
+export const INDUSTRY_SOLUTIONS = [
+  {
+    icon: '🏭',
+    title: 'Manufacturing Units',
+    desc: 'Shift attendance, overtime, statutory registers, wage slips, labour records, and monthly compliance support for factory teams.',
+  },
+  {
+    icon: '🏗️',
+    title: 'Construction & Sites',
+    desc: 'Multi-location workforce records, site attendance, worker documentation, contractor coordination, and expense tracking.',
+  },
+  {
+    icon: '⚙️',
+    title: 'Engineering Services',
+    desc: 'Employee lifecycle records, payroll inputs, client/vendor communication, quotations, invoices, and MIS reporting.',
+  },
+  {
+    icon: '🌞',
+    title: 'Energy & Solar',
+    desc: 'Field workforce attendance, location verification, monthly payroll, reimbursement tracking, and operational reporting.',
+  },
+  {
+    icon: '🧵',
+    title: 'Textile & Production',
+    desc: 'Daily attendance reconciliation, overtime registers, wage documentation, leave records, and statutory form maintenance.',
+  },
+  {
+    icon: '🏢',
+    title: 'Growing Offices',
+    desc: 'HR administration, onboarding records, payroll verification, policy communication, compliance desk, and employee support.',
+  },
 ];
 
 export const SERVICES = [
@@ -154,9 +199,81 @@ export const WHY_US = [
   { icon: '🎯', title: 'Compliance-First', desc: 'Every process built around statutory obligations, not patched onto them.' },
 ];
 
+export const WORKFLOW_STEPS = [
+  {
+    num: '01',
+    title: 'Workforce Mapping',
+    desc: 'We capture employee count, locations, attendance rules, salary structure, statutory scope, and reporting needs before monthly operations begin.',
+  },
+  {
+    num: '02',
+    title: 'Data Collection',
+    desc: 'Attendance, leave, expenses, advances, onboarding records, vendor documents, and payroll inputs are collected through a structured checklist.',
+  },
+  {
+    num: '03',
+    title: 'Verification Layer',
+    desc: 'Inputs are cross-checked before processing to reduce salary errors, missing documents, compliance gaps, and last-minute correction cycles.',
+  },
+  {
+    num: '04',
+    title: 'Processing & Filing',
+    desc: 'Payroll, payslips, EPFO, ESIC, registers, invoices, quotations, reports, and supporting documents are prepared with defined timelines.',
+  },
+  {
+    num: '05',
+    title: 'Reporting Dashboard',
+    desc: 'Monthly summaries, statutory status, pending actions, attendance insights, expense reports, and document trackers are shared clearly.',
+  },
+  {
+    num: '06',
+    title: 'Continuous Support',
+    desc: 'Our team supports employee queries, employer coordination, documentation updates, portal follow-up, and process improvements every month.',
+  },
+];
+
+export const SERVICE_COVERAGE = [
+  { icon: '🧾', title: 'Payroll Cycle', desc: 'Input validation, salary computation, deductions, overtime, payslips, registers, and final settlement support.' },
+  { icon: '📍', title: 'Attendance Control', desc: 'GPS attendance, daily monitoring, monthly reconciliation, location verification, and exception reporting.' },
+  { icon: '🏛️', title: 'Compliance Desk', desc: 'EPFO, ESIC, statutory registers, prescribed forms, portal coordination, and compliance status tracking.' },
+  { icon: '📨', title: 'Communication Desk', desc: 'Official mail handling, employee communication, vendor/client coordination, and document follow-up.' },
+  { icon: '💼', title: 'Billing Support', desc: 'Quotation preparation, PO tracking, invoice submission, payment follow-up, and billing documentation.' },
+  { icon: '📊', title: 'MIS & Reports', desc: 'Monthly dashboards for attendance, payroll, expenses, advances, compliance, and workforce operations.' },
+  { icon: '🧑‍💼', title: 'Employee Desk', desc: 'Support for onboarding, employee records, HR letters, lifecycle updates, and routine employee queries.' },
+  { icon: '🗃️', title: 'Record Control', desc: 'Organized document folders, register updates, proof records, audit support, and monthly file maintenance.' },
+  { icon: '🔁', title: 'Follow-Up System', desc: 'Pending action tracking for documents, filings, payments, approvals, portal issues, and client-side dependencies.' },
+];
+
+export const FAQS = [
+  {
+    question: 'Can Athena manage complete monthly HR operations?',
+    answer: 'Yes. Athena can support attendance, payroll, employee records, statutory registers, EPFO, ESIC, documentation, reporting, and monthly coordination.',
+  },
+  {
+    question: 'Can you work with our existing attendance or payroll data?',
+    answer: 'Yes. We can review your current data format, clean the inputs, reconcile missing records, and move the monthly process into a structured workflow.',
+  },
+  {
+    question: 'Do you support EPFO and ESIC portal activities?',
+    answer: 'Yes. Athena supports employee registration, UAN coordination, ECR filing, contribution reporting, ESIC registration, and compliance follow-up.',
+  },
+  {
+    question: 'Will we receive monthly reports?',
+    answer: 'Yes. We provide payroll reports, attendance summaries, expense/advance status, statutory register updates, compliance status, and pending action lists.',
+  },
+  {
+    question: 'Can Athena support multiple locations?',
+    answer: 'Yes. We can consolidate attendance, employee data, payroll inputs, and compliance records across multiple branches or project sites.',
+  },
+  {
+    question: 'How do we start?',
+    answer: 'Share your current employee count, locations, payroll cycle, attendance method, and statutory requirements. We will map the scope and propose the right support model.',
+  },
+];
+
 export const CONTACTS = [
   { role: 'Manager', number: '9080654027' },
-  { role: 'Admin', number: '7904691980' },
+  { role: 'Admin', number: '7904991980' },
 ];
 
 export const TESTIMONIALS = [
@@ -180,6 +297,8 @@ export const PRODUCTS = [
       { icon: '📊', label: 'Reports', desc: 'Instant business and workforce analytics' },
       { icon: '👥', label: 'Team', desc: 'Manage your full team structure and roles' },
       { icon: '💰', label: 'Accounts', desc: 'Expense tracking and financial summaries' },
+      { icon: '🧾', label: 'Expenses', desc: 'Claim capture, approvals, and reimbursement records' },
+      { icon: '🗂️', label: 'Documents', desc: 'Employee files and operational documents in one place' },
     ],
     highlights: [
       { icon: '🎯', title: 'All-in-One Workforce Solution', desc: 'Everything you need, all in one place.' },
@@ -190,7 +309,7 @@ export const PRODUCTS = [
       { value: 'Real-Time', label: 'GPS Tracking' },
       { value: '100%', label: 'Mobile' },
     ],
-    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=700&q=80',
+    image: '/images/athena-ergon.jpeg',
   },
   {
     id: 'aiagent',
@@ -205,6 +324,8 @@ export const PRODUCTS = [
       { icon: '⚙️', label: 'Task Automation', desc: 'Automate repetitive tasks and save hours every week' },
       { icon: '🔄', label: 'Workflow Optimization', desc: 'Redesign and streamline your existing processes' },
       { icon: '📈', label: 'Better Productivity', desc: 'Empower every team member to do more with less effort' },
+      { icon: '📋', label: 'Policy Guidance', desc: 'Assist employees with HR policies, forms, and process steps' },
+      { icon: '🔎', label: 'Data Search', desc: 'Find documents, reports, and answers without manual digging' },
     ],
     pillars: [
       { icon: '🧠', label: 'Intelligent', desc: 'Understands context and delivers accurate responses.' },
@@ -218,7 +339,7 @@ export const PRODUCTS = [
       { value: '5+', label: 'AI Features' },
       { value: 'Enterprise', label: 'Security' },
     ],
-    image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=80',
+    image: '/images/athena-ai-agent.jpeg',
   },
   {
     id: 'platform',
@@ -244,13 +365,6 @@ export const PRODUCTS = [
       { value: '1', label: 'Unified Platform' },
       { value: '∞', label: 'Scalable' },
     ],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80',
+    image: '/images/athena-platform.jpeg',
   },
-];
-
-export const HERO_IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=300&q=75', label: 'HR Admin' },
-  { src: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&q=75', label: 'Payroll' },
-  { src: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=300&q=75', label: 'Compliance' },
-  { src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&q=75', label: 'Attendance' },
 ];

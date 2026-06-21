@@ -3,6 +3,7 @@ import { CONTACTS, TESTIMONIALS } from './data/siteData';
 import { useReveal } from './hooks/useReveal';
 import { AboutSection } from './sections/AboutSection';
 import { ContactSection } from './sections/ContactSection';
+import { ClientsSection } from './sections/ClientsSection';
 import { Footer } from './sections/Footer';
 import { FormsSection } from './sections/FormsSection';
 import { Header } from './sections/Header';
@@ -11,6 +12,7 @@ import { ProductsSection } from './sections/ProductsSection';
 import { ServicesSection } from './sections/ServicesSection';
 import { StatsStrip } from './sections/StatsStrip';
 import { TestimonialsSection } from './sections/TestimonialsSection';
+import { WorkflowSection } from './sections/WorkflowSection';
 import { WhySection } from './sections/WhySection';
 import { scrollToId } from './utils/scrollToId';
 
@@ -97,11 +99,13 @@ export default function AthenaSolutions() {
         onServicesClick={() => scrollToId('services')}
       />
       <StatsStrip />
+      <ClientsSection />
       <AboutSection />
       <ServicesSection openService={openService} setOpenService={setOpenService} />
       <FormsSection activeForm={activeForm} setActiveForm={setActiveForm} />
       <WhySection />
       <ProductsSection />
+      <WorkflowSection />
       <TestimonialsSection
         activeTestimonial={activeTestimonial}
         setActiveTestimonial={setActiveTestimonial}

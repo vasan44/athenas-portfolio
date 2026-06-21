@@ -2,7 +2,16 @@ import { CheckCircle2 } from 'lucide-react';
 
 export function AboutSection() {
   return (
-    <section className="section on-parchment ruled-onparchment" id="about">
+    <section className="section on-parchment ruled-onparchment about-section" id="about">
+      <img
+        className="about-background-texture"
+        src="/images/about-office.webp"
+        alt=""
+        width="1100"
+        height="733"
+        loading="lazy"
+        aria-hidden="true"
+      />
       <div className="wrap">
         <div className="about-grid">
           <div className="about-text reveal-left">
@@ -26,11 +35,14 @@ export function AboutSection() {
 
           <div className="about-image-wrap reveal-right d2">
             <img
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
-              alt="Professional HR team at work"
+              className="about-chart-image"
+              src="/images/optirise/about-chart.svg"
+              alt="Workforce performance growth chart"
+              width="640"
+              height="500"
               loading="lazy"
+              decoding="async"
             />
-            <div className="about-image-overlay" />
             <div className="about-image-badge">
               <CheckCircle2 size={24} className="badge-icon" />
               <div className="badge-text">

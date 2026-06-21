@@ -4,7 +4,7 @@ import { formatPhone } from '../utils/formatPhone';
 
 export function ContactSection({ onCallNow, onStamp }) {
   return (
-    <section className="section on-parchment ruled-onparchment" id="contact">
+    <section className="section on-parchment contact-section" id="contact">
       <div className="wrap">
         <div className="contact-doc reveal">
           <div className="contact-top">
@@ -16,7 +16,7 @@ export function ContactSection({ onCallNow, onStamp }) {
               </p>
             </div>
             <div className="contact-image">
-              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&q=80" alt="Business team" loading="lazy" />
+              <img src="/images/about-office.webp" alt="Business team" loading="lazy" />
             </div>
           </div>
           <div className="contact-cards">
