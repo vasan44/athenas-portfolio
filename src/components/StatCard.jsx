@@ -4,7 +4,7 @@ import { useCounter } from '../hooks/useCounter';
 export function StatCard({ stat, index }) {
   const [inView, setInView] = useState(false);
   const ref = useRef(null);
-  const count = useCounter(stat.value, 1800, inView);
+  const count = useCounter(`${stat.value}${stat.suffix}`, 1800, inView);
   const Icon = stat.icon;
 
   useEffect(() => {

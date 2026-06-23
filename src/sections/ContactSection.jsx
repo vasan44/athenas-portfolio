@@ -8,7 +8,7 @@ export function ContactSection({ onCallNow, onStamp }) {
       <div className="wrap">
         <div className="contact-doc reveal">
           <div className="contact-top">
-            <div>
+            <div className="contact-top-text">
               <span className="eyebrow on-parchment">Contact Us</span>
               <h3>Bring your HR, payroll and compliance under one roof.</h3>
               <p className="contact-intro">
@@ -16,7 +16,7 @@ export function ContactSection({ onCallNow, onStamp }) {
               </p>
             </div>
             <div className="contact-image">
-              <img src="/images/about-office.webp" alt="Business team" loading="lazy" />
+              <img src="/images/hero-team.webp" alt="Business team" loading="lazy" />
             </div>
           </div>
           <div className="contact-cards">

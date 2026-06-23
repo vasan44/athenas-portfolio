@@ -99,13 +99,13 @@ export default function AthenaSolutions() {
         onServicesClick={() => scrollToId('services')}
       />
       <StatsStrip />
-      <ClientsSection />
       <AboutSection />
-      <ServicesSection openService={openService} setOpenService={setOpenService} />
-      <FormsSection activeForm={activeForm} setActiveForm={setActiveForm} />
+      <ClientsSection />
+      <ServicesSection />
       <WhySection />
       <ProductsSection />
       <WorkflowSection />
+      <FormsSection activeForm={activeForm} setActiveForm={setActiveForm} />
       <TestimonialsSection
         activeTestimonial={activeTestimonial}
         setActiveTestimonial={setActiveTestimonial}

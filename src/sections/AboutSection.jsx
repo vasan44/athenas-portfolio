@@ -36,10 +36,10 @@ export function AboutSection() {
           <div className="about-image-wrap reveal-right d2">
             <img
               className="about-chart-image"
-              src="/images/optirise/about-chart.svg"
-              alt="Workforce performance growth chart"
+              src="/images/live/integrated-hr-payroll.png"
+              alt="Integrated HR and payroll management"
               width="640"
-              height="500"
+              height="360"
               loading="lazy"
               decoding="async"
             />

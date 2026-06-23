@@ -1,4 +1,32 @@
-import { CLIENT_LOGOS, INDUSTRY_SOLUTIONS } from '../data/siteData';
+import { useState, useEffect } from 'react';
+import { CLIENT_LOGOS } from '../data/siteData';
+
+function ClientLogoMark({ client }) {
+  const [imageAvailable, setImageAvailable] = useState(true);
+
+  useEffect(() => {
+    setImageAvailable(true);
+  }, [client.logo]);
+
+  if (client.logo && imageAvailable) {
+    return (
+      <span className="client-logo-mark client-logo-mark-image">
+        <img
+          src={client.logo}
+          alt={client.name}
+          loading="lazy"
+          onError={() => setImageAvailable(false)}
+        />
+      </span>
+    );
+  }
+
+  return (
+    <span className="client-logo-mark client-logo-mark-text">
+      <span>{client.mark || client.name}</span>
+    </span>
+  );
+}
 
 export function ClientsSection() {
   return (
@@ -11,24 +39,18 @@ export function ClientsSection() {
           <div className="head-rule reveal-rule d2" />
         </div>
 
-        <div className="client-logo-strip reveal d2" aria-label="Industries served by Athena">
+        <div className="client-logo-strip" aria-label="Industries served by Athena">
           {CLIENT_LOGOS.map((client, index) => (
-            <div className="client-logo-tile" style={{ '--logo-delay': `${index * 0.08}s` }} key={client.name}>
-              <span>{client.mark}</span>
-              <small>{client.name}</small>
+            <div
+              className="client-logo-tile reveal"
+              style={{ transitionDelay: `${index * 0.08}s` }}
+              key={client.name}
+            >
+              <ClientLogoMark client={client} />
             </div>
           ))}
         </div>
 
-        <div className="industry-grid">
-          {INDUSTRY_SOLUTIONS.map((item, index) => (
-            <article className="industry-card reveal" style={{ transitionDelay: `${index * 0.06}s` }} key={item.title}>
-              <div className="industry-icon">{item.icon}</div>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </article>
-          ))}
-        </div>
       </div>
     </section>
   );

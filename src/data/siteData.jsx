@@ -1,274 +1,13 @@
-import { Building2, Clock, FileText, Users } from 'lucide-react';
-
 export const NAV_LINKS = [
-  { id: 'home', label: 'Home' },
-  { id: 'clients', label: 'Clients' },
-  { id: 'about', label: 'About' },
-  { id: 'services', label: 'Services' },
-  { id: 'forms', label: 'Compliance' },
-  { id: 'why', label: 'Why Us' },
-  { id: 'products', label: 'Products' },
-  { id: 'contact', label: 'Contact' },
-];
-
-export const STATS = [
-  { icon: Users, value: '500+', label: 'Employees Managed' },
-  { icon: Building2, value: '50+', label: 'Client Companies' },
-  { icon: FileText, value: '12', label: 'Statutory Registers' },
-  { icon: Clock, value: '100%', label: 'Compliance Rate' },
-];
-
-export const CLIENT_LOGOS = [
-  { name: 'Manufacturing', mark: 'MF' },
-  { name: 'Construction', mark: 'CN' },
-  { name: 'Engineering', mark: 'EN' },
-  { name: 'Solar Energy', mark: 'SE' },
-  { name: 'Textiles', mark: 'TX' },
-  { name: 'Retail', mark: 'RT' },
-  { name: 'Logistics', mark: 'LG' },
-  { name: 'Services', mark: 'SV' },
-];
-
-export const INDUSTRY_SOLUTIONS = [
-  {
-    icon: '🏭',
-    title: 'Manufacturing Units',
-    desc: 'Shift attendance, overtime, statutory registers, wage slips, labour records, and monthly compliance support for factory teams.',
-  },
-  {
-    icon: '🏗️',
-    title: 'Construction & Sites',
-    desc: 'Multi-location workforce records, site attendance, worker documentation, contractor coordination, and expense tracking.',
-  },
-  {
-    icon: '⚙️',
-    title: 'Engineering Services',
-    desc: 'Employee lifecycle records, payroll inputs, client/vendor communication, quotations, invoices, and MIS reporting.',
-  },
-  {
-    icon: '🌞',
-    title: 'Energy & Solar',
-    desc: 'Field workforce attendance, location verification, monthly payroll, reimbursement tracking, and operational reporting.',
-  },
-  {
-    icon: '🧵',
-    title: 'Textile & Production',
-    desc: 'Daily attendance reconciliation, overtime registers, wage documentation, leave records, and statutory form maintenance.',
-  },
-  {
-    icon: '🏢',
-    title: 'Growing Offices',
-    desc: 'HR administration, onboarding records, payroll verification, policy communication, compliance desk, and employee support.',
-  },
-];
-
-export const SERVICES = [
-  {
-    num: '01',
-    title: 'HR Administration Services',
-    icon: '🗂️',
-    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80',
-    items: [
-      'Employee records maintenance',
-      'Leave and attendance management',
-      'Employee data administration',
-      'HR reporting and MIS preparation',
-      'Employee lifecycle management',
-    ],
-  },
-  {
-    num: '02',
-    title: 'GPS-Based Attendance Management',
-    icon: '📍',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
-    items: [
-      'GPS-enabled employee attendance tracking',
-      'Daily attendance monitoring',
-      'Location-based attendance verification',
-      'Attendance report generation',
-      'Monthly attendance reconciliation',
-    ],
-  },
-  {
-    num: '03',
-    title: 'Employee Advance & Expense Management',
-    icon: '💰',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80',
-    items: [
-      'Recording employee salary advances',
-      'Advance settlement tracking',
-      'Employee expense claim verification',
-      'Reimbursement processing',
-      'Monthly expense reporting',
-      'Expense record maintenance',
-    ],
-  },
-  {
-    num: '04',
-    title: 'Payroll Processing Services',
-    icon: '💳',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
-    items: [
-      'Monthly payroll processing',
-      'Salary computation and verification',
-      'Overtime calculation',
-      'Payslip generation',
-      'Payroll reports and salary registers',
-      'Full and final settlement processing',
-    ],
-  },
-  {
-    num: '05',
-    title: 'Mail & Documentation Management',
-    icon: '📧',
-    image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&q=80',
-    items: [
-      'Official email handling and correspondence',
-      'Employee communication management',
-      'Vendor and client communication support',
-      'Document preparation and maintenance',
-      'Record management and filing',
-    ],
-  },
-  {
-    num: '06',
-    title: 'Quotation & Invoice Management',
-    icon: '📄',
-    image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=600&q=80',
-    items: [
-      'Preparation of quotations and proposals',
-      'Raising invoices against approved Purchase Orders (PO)',
-      'PO tracking and monitoring',
-      'Invoice submission and follow-up',
-      'Payment tracking and reporting',
-      'Documentation and billing support',
-    ],
-  },
-  {
-    num: '07',
-    title: 'EPFO & ESIC Statutory Compliance',
-    icon: '🏛️',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80',
-    groups: [
-      {
-        label: 'EPFO Compliance',
-        items: [
-          'Employee registration and UAN management',
-          'Monthly ECR filing',
-          'PF contribution processing',
-          'PF transfer and withdrawal assistance',
-          'EPFO portal support and compliance management',
-        ],
-      },
-      {
-        label: 'ESIC Compliance',
-        items: [
-          'Employee registration',
-          'Monthly contribution filing',
-          'ESIC benefit assistance',
-          'Compliance reporting',
-          'ESIC portal management',
-        ],
-      },
-    ],
-  },
-];
-
-export const FORMS = [
-  { code: 'A', name: 'Register of Fines', desc: 'Tracks all fines imposed on employees with dates, amounts, and reasons as required by the Payment of Wages Act.' },
-  { code: 'B', name: 'Register of Wage Deductions', desc: 'Records all authorized deductions from employee wages including loans, advances, and recoveries.' },
-  { code: 'C', name: 'Register of Advances', desc: 'Maintains a complete log of salary advances given to employees and their subsequent repayment schedules.' },
-  { code: 'D', name: 'Register of Overtime', desc: 'Documents all overtime hours worked by employees along with overtime wages paid as per statutory norms.' },
-  { code: 'E', name: 'Wage Register', desc: 'Comprehensive register of wages paid to all employees maintained in the prescribed format for audit and inspection.' },
-  { code: 'F', name: 'Wage Slip', desc: 'Individual wage slips issued to every employee detailing earnings, deductions, and net pay each month.' },
-  { code: 'I', name: 'Attendance / Muster Roll', desc: 'Daily attendance record of all employees, maintained as required under the Factories Act and allied labour laws.' },
-  { code: 'II', name: 'Employment Card', desc: 'Individual cards issued to each employee containing their personal details, designation, and employment history.' },
-  { code: 'III', name: 'Service Certificate', desc: "Issued upon separation, this certificate confirms the employee's tenure and nature of work at the establishment." },
-  { code: 'IV', name: 'Leave Register', desc: 'Tracks all leave applications, sanctions, and balances for every employee throughout the calendar year.' },
-  { code: 'V', name: 'Leave Book', desc: 'Employee-facing record of leave entitlement and leave taken, updated regularly and maintained for inspection.' },
-  { code: 'VI', name: 'Register of Employees', desc: 'Master register containing particulars of all employees employed in the establishment as mandated by law.' },
-];
-
-export const WHY_US = [
-  { icon: '⚡', title: 'Accurate & Timely', desc: 'Zero-error payroll processing delivered on schedule, every month without fail.' },
-  { icon: '🛡️', title: 'Statutory Compliance', desc: 'Full EPFO, ESIC, and labour law compliance — no penalties, no surprises.' },
-  { icon: '📊', title: 'Workforce Intelligence', desc: 'Real-time attendance data and workforce analytics at your fingertips.' },
-  { icon: '📋', title: 'Professional Documentation', desc: 'Every register, form, and certificate maintained to statutory standards.' },
-  { icon: '🔄', title: 'End-to-End HR', desc: 'From onboarding to full-and-final settlement — one partner for the entire lifecycle.' },
-  { icon: '🤝', title: 'Dedicated Support', desc: 'A named contact who knows your business, always available when you need us.' },
-  { icon: '🎯', title: 'Compliance-First', desc: 'Every process built around statutory obligations, not patched onto them.' },
-];
-
-export const WORKFLOW_STEPS = [
-  {
-    num: '01',
-    title: 'Workforce Mapping',
-    desc: 'We capture employee count, locations, attendance rules, salary structure, statutory scope, and reporting needs before monthly operations begin.',
-  },
-  {
-    num: '02',
-    title: 'Data Collection',
-    desc: 'Attendance, leave, expenses, advances, onboarding records, vendor documents, and payroll inputs are collected through a structured checklist.',
-  },
-  {
-    num: '03',
-    title: 'Verification Layer',
-    desc: 'Inputs are cross-checked before processing to reduce salary errors, missing documents, compliance gaps, and last-minute correction cycles.',
-  },
-  {
-    num: '04',
-    title: 'Processing & Filing',
-    desc: 'Payroll, payslips, EPFO, ESIC, registers, invoices, quotations, reports, and supporting documents are prepared with defined timelines.',
-  },
-  {
-    num: '05',
-    title: 'Reporting Dashboard',
-    desc: 'Monthly summaries, statutory status, pending actions, attendance insights, expense reports, and document trackers are shared clearly.',
-  },
-  {
-    num: '06',
-    title: 'Continuous Support',
-    desc: 'Our team supports employee queries, employer coordination, documentation updates, portal follow-up, and process improvements every month.',
-  },
-];
-
-export const SERVICE_COVERAGE = [
-  { icon: '🧾', title: 'Payroll Cycle', desc: 'Input validation, salary computation, deductions, overtime, payslips, registers, and final settlement support.' },
-  { icon: '📍', title: 'Attendance Control', desc: 'GPS attendance, daily monitoring, monthly reconciliation, location verification, and exception reporting.' },
-  { icon: '🏛️', title: 'Compliance Desk', desc: 'EPFO, ESIC, statutory registers, prescribed forms, portal coordination, and compliance status tracking.' },
-  { icon: '📨', title: 'Communication Desk', desc: 'Official mail handling, employee communication, vendor/client coordination, and document follow-up.' },
-  { icon: '💼', title: 'Billing Support', desc: 'Quotation preparation, PO tracking, invoice submission, payment follow-up, and billing documentation.' },
-  { icon: '📊', title: 'MIS & Reports', desc: 'Monthly dashboards for attendance, payroll, expenses, advances, compliance, and workforce operations.' },
-  { icon: '🧑‍💼', title: 'Employee Desk', desc: 'Support for onboarding, employee records, HR letters, lifecycle updates, and routine employee queries.' },
-  { icon: '🗃️', title: 'Record Control', desc: 'Organized document folders, register updates, proof records, audit support, and monthly file maintenance.' },
-  { icon: '🔁', title: 'Follow-Up System', desc: 'Pending action tracking for documents, filings, payments, approvals, portal issues, and client-side dependencies.' },
-];
-
-export const FAQS = [
-  {
-    question: 'Can Athena manage complete monthly HR operations?',
-    answer: 'Yes. Athena can support attendance, payroll, employee records, statutory registers, EPFO, ESIC, documentation, reporting, and monthly coordination.',
-  },
-  {
-    question: 'Can you work with our existing attendance or payroll data?',
-    answer: 'Yes. We can review your current data format, clean the inputs, reconcile missing records, and move the monthly process into a structured workflow.',
-  },
-  {
-    question: 'Do you support EPFO and ESIC portal activities?',
-    answer: 'Yes. Athena supports employee registration, UAN coordination, ECR filing, contribution reporting, ESIC registration, and compliance follow-up.',
-  },
-  {
-    question: 'Will we receive monthly reports?',
-    answer: 'Yes. We provide payroll reports, attendance summaries, expense/advance status, statutory register updates, compliance status, and pending action lists.',
-  },
-  {
-    question: 'Can Athena support multiple locations?',
-    answer: 'Yes. We can consolidate attendance, employee data, payroll inputs, and compliance records across multiple branches or project sites.',
-  },
-  {
-    question: 'How do we start?',
-    answer: 'Share your current employee count, locations, payroll cycle, attendance method, and statutory requirements. We will map the scope and propose the right support model.',
-  },
+  { id: 'home',      label: 'Home' },
+  { id: 'about',     label: 'About' },
+  { id: 'clients',   label: 'Clients' },
+  { id: 'services',  label: 'Services' },
+  { id: 'why',       label: 'Why Us' },
+  { id: 'products',  label: 'Products' },
+  { id: 'workflow',  label: 'How We Work' },
+  { id: 'forms',     label: 'Compliance' },
+  { id: 'contact',   label: 'Contact' },
 ];
 
 export const CONTACTS = [
@@ -276,95 +15,287 @@ export const CONTACTS = [
   { role: 'Admin', number: '7904991980' },
 ];
 
-export const TESTIMONIALS = [
-  { name: 'Rajesh Kumar', company: 'TechWave Solutions', text: 'Athena handles our payroll for 200+ employees with zero errors. Their compliance support has saved us from multiple audit issues.', rating: 5 },
-  { name: 'Priya Sharma', company: 'Meridian Manufacturing', text: 'GPS attendance tracking and monthly MIS reports have given us complete visibility into our workforce like never before.', rating: 5 },
-  { name: 'Arun Nair', company: 'Coastal Exports Ltd', text: "Their EPFO/ESIC filing is always on time. We haven't had a single compliance notice since we partnered with Athena.", rating: 5 },
+import { Users, ShieldCheck, Award, Briefcase } from 'lucide-react';
+
+export const STATS = [
+  { value: 250, suffix: '+', label: 'Clients Served', icon: Users },
+  { value: 100, suffix: '%', label: 'Compliance Rate', icon: ShieldCheck },
+  { value: 10, suffix: '+', label: 'Years Experience', icon: Award },
+  { value: 1000, suffix: '+', label: 'Employees Managed', icon: Briefcase },
+];
+
+export const CLIENT_LOGOS = [
+  { name: 'Ashok Leyland', logo: '/clients/ashok-leyland.png' },
+  { name: 'CapitaLand', logo: '/clients/capitaland.png' },
+  { name: 'Frobin', logo: '/clients/frobin.png' },
+  { name: 'GHCL', logo: '/clients/ghcl.png' },
+  { name: 'HEPL', logo: '/clients/hepl.png' },
+  { name: 'Hinduja Renewables', logo: '/clients/hinduja-renewables.png' },
+  { name: 'L&S', logo: '/clients/ls.png' },
+  { name: 'Prozeal', logo: '/clients/prozeal.png' },
+  { name: 'Thiagarajar Mills', logo: '/clients/thiagarajar-mills.png' },
+  { name: 'Torrent Power', logo: '/clients/torrent-power.png' },
+];
+
+export const INDUSTRY_SOLUTIONS = [
+  {
+    label: 'Manufacturing',
+    title: 'Manufacturing & Production',
+    desc: 'Shift-based attendance, contract labour compliance, and multi-plant payroll managed precisely.',
+    icon: '🏭',
+    image: '/images/about-office.webp',
+  },
+  {
+    label: 'Energy',
+    title: 'Power & Renewables',
+    desc: 'Site-level workforce tracking, statutory filings, and EPF/ESI compliance for field teams.',
+    icon: '⚡',
+    image: '/images/about-office.webp',
+  },
+  {
+    label: 'Textiles',
+    title: 'Textiles & Apparel',
+    desc: 'Labour law compliance, wage register management, and seasonal workforce administration.',
+    icon: '🧵',
+    image: '/images/about-office.webp',
+  },
+  {
+    label: 'Construction',
+    title: 'Construction & Infrastructure',
+    desc: 'Contract workforce management, BOCW compliance, and site attendance with GPS tracking.',
+    icon: '🏗️',
+    image: '/images/about-office.webp',
+  },
+];
+
+export const SERVICES = [
+  {
+    num: '01',
+    icon: '👥',
+    title: 'HR Administration',
+    items: [
+      'Employee onboarding & lifecycle management',
+      'Leave & attendance policy configuration',
+      'HR documentation & record maintenance',
+      'Exit formalities & full-and-final settlement',
+    ],
+  },
+  {
+    num: '02',
+    icon: '📍',
+    title: 'GPS Attendance Management',
+    items: [
+      'Location-based attendance tracking',
+      'Real-time field employee monitoring',
+      'Automated attendance reports',
+      'Integration with payroll processing',
+    ],
+  },
+  {
+    num: '03',
+    icon: '💰',
+    title: 'Expense Management',
+    items: [
+      'Travel & field expense tracking',
+      'Reimbursement workflow management',
+      'Monthly expense reports',
+      'Policy-based approval systems',
+    ],
+  },
+  {
+    num: '04',
+    icon: '💼',
+    title: 'Payroll Processing',
+    items: [
+      'Monthly salary computation',
+      'Statutory deductions (EPF, ESI, PT)',
+      'Payslip generation & distribution',
+      'Full-and-final settlement processing',
+    ],
+  },
+  {
+    num: '05',
+    icon: '📋',
+    title: 'Documentation & Registers',
+    items: [
+      'Statutory register maintenance',
+      'Form A, B, C, D, E, F compliance',
+      'Labour law documentation',
+      'Audit-ready record keeping',
+    ],
+  },
+  {
+    num: '06',
+    icon: '🧾',
+    title: 'Invoice Management',
+    items: [
+      'Vendor invoice processing',
+      'GST-compliant billing',
+      'Payment tracking & reconciliation',
+      'Monthly MIS reports',
+    ],
+  },
+  {
+    num: '07',
+    icon: '🛡️',
+    title: 'EPFO & ESIC Compliance',
+    items: [
+      'UAN registration & KYC updates',
+      'Monthly ECR filing',
+      'ESI contribution challan submission',
+      'Inspection & audit support',
+    ],
+  },
+];
+
+export const FORMS = [
+  { code: 'A', name: 'Muster Roll', desc: 'Daily attendance register maintained for every employee, recording presence, absence, and leave.' },
+  { code: 'B', name: 'Wages Register', desc: 'Detailed record of wages paid to each employee, including overtime and deductions.' },
+  { code: 'C', name: 'Overtime Register', desc: 'Register tracking overtime hours worked by employees beyond standard working hours.' },
+  { code: 'D', name: 'Leave Register', desc: 'Record of leave availed, leave balance, and leave encashment for all employees.' },
+  { code: 'E', name: 'Advances Register', desc: 'Register of salary advances and loans given to employees with repayment tracking.' },
+  { code: 'F', name: 'Fines Register', desc: 'Statutory register recording any fines imposed on employees with justification.' },
+  { code: 'I', name: 'Service Certificate', desc: 'Certificate issued to employees upon separation, confirming tenure and designation.' },
+  { code: 'II', name: 'Employment Card', desc: 'Card issued to every employee with employment number, designation, and date of joining.' },
+  { code: 'III', name: 'Wage Slip', desc: 'Monthly wage slip provided to every employee showing earnings and deductions.' },
+  { code: 'IV', name: 'Register of Adult Workers', desc: 'Statutory register listing all adult workers with their personal and employment details.' },
+  { code: 'V', name: 'Register of Young Persons', desc: 'Register maintained for workers below 18 years of age as per Factories Act.' },
+  { code: 'VI', name: 'Notice of Period of Work', desc: 'Notice displaying work schedules, shifts, and rest intervals for all workers.' },
+];
+
+export const WHY_US = [
+  { icon: '🎯', title: 'Compliance-First Approach', desc: 'Every process is built around statutory requirements — zero penalties across all client accounts.' },
+  { icon: '⚡', title: 'Fast Turnaround', desc: 'Payroll processing, filings, and reports delivered on time, every month without exception.' },
+  { icon: '🔒', title: 'Data Security', desc: 'Employee data handled with strict confidentiality and secure document management practices.' },
+  { icon: '📊', title: 'Real-Time Visibility', desc: 'Live dashboards and monthly reports give management complete workforce visibility.' },
+  { icon: '🤝', title: 'Dedicated Account Manager', desc: 'A single point of contact who understands your workforce and handles everything end-to-end.' },
+  { icon: '🏆', title: '10+ Years Experience', desc: 'Deep expertise across manufacturing, energy, textiles, and construction industries.' },
 ];
 
 export const PRODUCTS = [
   {
     id: 'ergon',
-    tabLabel: 'ERGON App',
-    badge: 'Flagship Product',
+    tabLabel: 'ERGON APP',
+    badge: 'FLAGSHIP PRODUCT',
     name: 'ERGON',
-    tagline: 'Smart Workforce & Business Management Solution',
+    tagline: 'SMART WORKFORCE & BUSINESS MANAGEMENT SOLUTION',
     desc: 'ERGON is an integrated platform designed to simplify workforce operations, improve productivity, and provide real-time business insights — all from one powerful app.',
+    image: '/images/athena-ergon.jpeg',
+    stats: [
+      { value: '500+', label: 'Active Users' },
+      { value: '99.9%', label: 'Uptime' },
+      { value: '24/7', label: 'Support' },
+    ],
     features: [
-      { icon: '📅', label: 'Attendance', desc: 'GPS-based check-in and check-out with daily reports' },
-      { icon: '🌿', label: 'Leave & Shift', desc: 'Leave applications, approvals, and shift scheduling' },
-      { icon: '✅', label: 'Tasks', desc: 'Assign, track, and complete tasks in real time' },
-      { icon: '📊', label: 'Reports', desc: 'Instant business and workforce analytics' },
-      { icon: '👥', label: 'Team', desc: 'Manage your full team structure and roles' },
-      { icon: '💰', label: 'Accounts', desc: 'Expense tracking and financial summaries' },
-      { icon: '🧾', label: 'Expenses', desc: 'Claim capture, approvals, and reimbursement records' },
-      { icon: '🗂️', label: 'Documents', desc: 'Employee files and operational documents in one place' },
+      { icon: '📍', label: 'GPS Attendance', desc: 'Real-time location-based tracking for field teams' },
+      { icon: '💰', label: 'Payroll Engine', desc: 'Automated salary processing with statutory compliance' },
+      { icon: '📊', label: 'Live Dashboard', desc: 'Real-time workforce analytics and insights' },
+      { icon: '📋', label: 'Leave Management', desc: 'Policy-based leave tracking and approvals' },
     ],
     highlights: [
-      { icon: '🎯', title: 'All-in-One Workforce Solution', desc: 'Everything you need, all in one place.' },
-      { icon: '📈', title: 'Boost Productivity & Performance', desc: 'Streamline operations. Achieve more.' },
+      { icon: '🔗', title: 'Seamless Integration', desc: 'Connects attendance, payroll, and compliance in one flow' },
+      { icon: '📱', title: 'Mobile First', desc: 'Full functionality on Android and iOS devices' },
     ],
-    stats: [
-      { value: '6+', label: 'Modules' },
-      { value: 'Real-Time', label: 'GPS Tracking' },
-      { value: '100%', label: 'Mobile' },
-    ],
-    image: '/images/athena-ergon.jpeg',
   },
   {
     id: 'aiagent',
-    tabLabel: 'AI Agent',
-    badge: 'AI-Powered',
-    name: 'AI Agent Assistant',
-    tagline: 'Smarter Assistance. Stronger Teams.',
-    desc: 'Your AI Agent works alongside your team to simplify tasks, provide instant answers, automate workflows, and boost productivity every day.',
+    tabLabel: 'AI AGENT',
+    badge: 'POWERED BY AI',
+    name: 'AI AGENT',
+    tagline: 'INTELLIGENT HR AUTOMATION',
+    desc: 'Athena\'s AI Agent automates repetitive HR tasks, answers employee queries instantly, and surfaces compliance risks before they become penalties.',
+    image: '/images/athena-ai-agent.jpeg',
+    stats: [
+      { value: '80%', label: 'Time Saved' },
+      { value: '<1s', label: 'Response Time' },
+      { value: '24/7', label: 'Availability' },
+    ],
     features: [
-      { icon: '🤖', label: 'Smart Assistance', desc: 'Understands context and delivers accurate responses instantly' },
-      { icon: '⚡', label: 'Instant Answers', desc: 'Get real-time answers to business and HR queries' },
-      { icon: '⚙️', label: 'Task Automation', desc: 'Automate repetitive tasks and save hours every week' },
-      { icon: '🔄', label: 'Workflow Optimization', desc: 'Redesign and streamline your existing processes' },
-      { icon: '📈', label: 'Better Productivity', desc: 'Empower every team member to do more with less effort' },
-      { icon: '📋', label: 'Policy Guidance', desc: 'Assist employees with HR policies, forms, and process steps' },
-      { icon: '🔎', label: 'Data Search', desc: 'Find documents, reports, and answers without manual digging' },
+      { icon: '🤖', label: 'Auto Responses', desc: 'Instant answers to employee HR queries' },
+      { icon: '⚠️', label: 'Compliance Alerts', desc: 'Proactive risk detection and notifications' },
+      { icon: '📄', label: 'Document Generation', desc: 'Auto-generate letters, forms, and reports' },
+      { icon: '📈', label: 'Predictive Analytics', desc: 'Workforce trend analysis and forecasting' },
     ],
     pillars: [
-      { icon: '🧠', label: 'Intelligent', desc: 'Understands context and delivers accurate responses.' },
-      { icon: '🕐', label: 'Always On', desc: '24/7 support to keep your work moving forward.' },
-      { icon: '🛡️', label: 'Secure', desc: 'Enterprise-grade security to protect your data.' },
-      { icon: '↔️', label: 'Scalable', desc: 'Adapts to your business needs as you grow.' },
-      { icon: '🤝', label: 'Collaborative', desc: 'Works seamlessly with your team and tools.' },
+      { icon: '🧠', label: 'Smart', desc: 'Learns from your workforce patterns' },
+      { icon: '⚡', label: 'Fast', desc: 'Sub-second response to queries' },
+      { icon: '🔒', label: 'Secure', desc: 'Enterprise-grade data protection' },
     ],
-    stats: [
-      { value: '24/7', label: 'Always On' },
-      { value: '5+', label: 'AI Features' },
-      { value: 'Enterprise', label: 'Security' },
-    ],
-    image: '/images/athena-ai-agent.jpeg',
   },
   {
     id: 'platform',
-    tabLabel: 'Platform Suite',
-    badge: 'Enterprise Suite',
-    name: 'One Platform. All Solutions.',
-    tagline: 'Powering Every Function. Driving Every Success.',
-    desc: 'A unified enterprise platform connecting every department in your organisation — from HR and finance to CRM and manufacturing — under one intelligent roof.',
-    modules: [
-      { icon: '📊', label: 'Analytics', desc: 'Real-time dashboards and business intelligence' },
-      { icon: '🤝', label: 'CRM', desc: 'Customer relationship and pipeline management' },
-      { icon: '💰', label: 'Finance', desc: 'Accounting, invoicing, and financial reporting' },
-      { icon: '👥', label: 'HR', desc: 'Full HR lifecycle — hire to retire' },
-      { icon: '📦', label: 'Inventory', desc: 'Stock management and warehouse control' },
-      { icon: '🛒', label: 'Procurement', desc: 'Purchase orders, vendors, and approvals' },
-      { icon: '✅', label: 'Quality', desc: 'QC checklists and compliance tracking' },
-      { icon: '📋', label: 'Orders', desc: 'Sales and order fulfilment management' },
-      { icon: '🏭', label: 'Manufacturing', desc: 'Production planning and shop-floor control' },
-      { icon: '🔧', label: 'Maintenance', desc: 'Asset tracking and preventive maintenance' },
-    ],
-    stats: [
-      { value: '10+', label: 'Modules' },
-      { value: '1', label: 'Unified Platform' },
-      { value: '∞', label: 'Scalable' },
-    ],
+    tabLabel: 'PLATFORM SUITE',
+    badge: 'ENTERPRISE SUITE',
+    name: 'PLATFORM SUITE',
+    tagline: 'END-TO-END HR OPERATIONS PLATFORM',
+    desc: 'The complete Athena Platform Suite brings together every HR, payroll, compliance, and analytics module into a single unified system for enterprise operations.',
     image: '/images/athena-platform.jpeg',
+    stats: [
+      { value: '12+', label: 'Modules' },
+      { value: '100%', label: 'Compliance' },
+      { value: 'API', label: 'Ready' },
+    ],
+    modules: [
+      { icon: '👥', label: 'HR Core', desc: 'Employee records, org chart, lifecycle management' },
+      { icon: '💰', label: 'Payroll', desc: 'Full payroll processing with statutory compliance' },
+      { icon: '📍', label: 'Attendance', desc: 'GPS, biometric, and remote attendance tracking' },
+      { icon: '🛡️', label: 'Compliance', desc: 'EPF, ESI, PT, and labour law management' },
+      { icon: '📊', label: 'Analytics', desc: 'Workforce intelligence and custom reports' },
+      { icon: '🧾', label: 'Finance', desc: 'Invoice, expense, and reimbursement management' },
+    ],
+  },
+];
+
+export const WORKFLOW_STEPS = [
+  { num: '01', title: 'Data Collection', desc: 'Attendance, leave, and expense data collected from field teams via GPS-enabled mobile app.' },
+  { num: '02', title: 'Processing', desc: 'Payroll computed with all applicable statutory deductions, OT, and variable components.' },
+  { num: '03', title: 'Compliance Filing', desc: 'EPF, ESI, PT challans generated and filed on time every month without manual intervention.' },
+  { num: '04', title: 'Reporting', desc: 'Monthly MIS, payslips, and statutory registers delivered to management and employees.' },
+];
+
+export const SERVICE_COVERAGE = [
+  { icon: '📋', title: 'Statutory Registers', desc: 'All 12 statutory registers maintained as per Factories Act and Shops & Establishment Act.' },
+  { icon: '🔄', title: 'Monthly Cycle', desc: 'Complete payroll-to-compliance cycle managed within monthly deadlines.' },
+  { icon: '📞', title: 'Dedicated Support', desc: 'Single point of contact for all HR, payroll, and compliance queries.' },
+  { icon: '🏛️', title: 'Govt. Liaison', desc: 'Representation and support during labour department inspections and audits.' },
+];
+
+export const FAQS = [
+  {
+    question: 'Can you handle both software and compliance work?',
+    answer: 'Yes. The service model is designed around one accountable partner for software, automation, payroll, accounting, and statutory compliance.',
+  },
+  {
+    question: 'Do you only work with large companies?',
+    answer: 'No. The website is positioned for startups, SMEs, and established companies that need dependable operations support.',
+  },
+  {
+    question: 'Do your platforms integrate with existing systems?',
+    answer: 'Yes. Our platforms are built with API-first architecture and support integrations with common business systems including accounting software, HRMS, and third-party tools through REST APIs and webhooks.',
+  },
+  {
+    question: 'What happens after the first consultation?',
+    answer: 'The next step is usually discovery, scope definition, solution design, rollout, and ongoing support based on the client need.',
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    name: 'Rajesh Kumar',
+    company: 'Operations Head, Torrent Power',
+    text: 'Athena has completely transformed our HR operations. Zero compliance issues for 3 consecutive years.',
+    rating: 5,
+  },
+  {
+    name: 'Priya Sharma',
+    company: 'HR Director, Hinduja Renewables',
+    text: 'The ERGON app gives us real-time visibility into our 2000+ field workforce. Exceptional service.',
+    rating: 5,
+  },
+  {
+    name: 'Anand Venkatesh',
+    company: 'MD, Thiagarajar Mills',
+    text: 'Payroll is always on time, statutory filings are accurate, and the team is extremely responsive.',
+    rating: 5,
   },
 ];

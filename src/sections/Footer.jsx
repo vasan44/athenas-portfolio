@@ -4,13 +4,13 @@ import { CONTACTS, NAV_LINKS } from '../data/siteData';
 import { formatPhone } from '../utils/formatPhone';
 
 const FOOTER_SERVICES = [
-  { label: 'HR Administration', index: 0 },
-  { label: 'GPS Attendance', index: 1 },
-  { label: 'Payroll Processing', index: 3 },
-  { label: 'EPFO & ESIC Compliance', index: 6 },
-  { label: 'Invoice Management', index: 5 },
-  { label: 'Documentation', index: 4 },
-  { label: 'Expense Management', index: 2 },
+  { label: 'Custom Software', index: 0 },
+  { label: 'Liaison Services', index: 1 },
+  { label: 'Accounting Services', index: 2 },
+  { label: 'Payroll Services', index: 3 },
+  { label: 'Labour Law Compliance', index: 4 },
+  { label: 'Statutory Compliance', index: 5 },
+  { label: 'Factory Compliance', index: 6 },
 ];
 
 export function Footer({ onNavClick, onServiceClick }) {

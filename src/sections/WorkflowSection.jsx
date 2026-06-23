@@ -38,8 +38,9 @@ export function WorkflowSection() {
         </div>
 
         <div className="section-head reveal workflow-subhead">
-          <span className="eyebrow">FAQ</span>
-          <h2 className="font-display">Common questions, clear answers</h2>
+          <span className="eyebrow">Questions</span>
+          <h2 className="font-display">Helpful answers before a conversation</h2>
+          <p>Answers to common questions about our platforms, compliance services, implementation process, and support.</p>
         </div>
 
         <div className="faq-grid">
